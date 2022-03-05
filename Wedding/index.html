@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свадьба Адама и Евы</title>
+    <meta name="description" content="Добро пожаловать на свадьбу Адама и Евы!">
+    <meta name="keywords" content="Свадьба Адама и Евы">
+    <meta name="author" content="Freelancer KAA">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="photo" id="start">
+        <h1>Адам & Ева</h1>
+        <p class="normal">Женятся</p>
+        <p>22.02.2022</p>
+    </div>
+
+    <menu>
+        <ul>
+            <li><a href="#start" onclick="setTimeout(1000)">Главная</a></li>
+            <li><a href="#heroes">Адам & Ева</a></li>
+            <li><a href="#goto">Свадьба</a></li>
+            <li><a href="#accept">Подтвердить</a></li>
+        </ul>
+    </menu>
+
+    <section class="about" id="heroes">
+        <h1>Адам & Ева</h1>
+        <img src="assets/wedding-2264973_1280.jpg">
+        <div class="textAbout">
+            <p>
+                Здравствуйте! Вы все знаете нас. И мы знаем Вас. Мы женимся! lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <button class="btn"><a href="#goto">Детали свадьбы</a></button>
+    </section>
+
+    <section class="youAreInvited">
+        <h1>Вы приглашены!</h1>
+        <p>конечно же :)</p>
+    </section>
+
+    <section class="wedding" id="goto">
+        <h1>Свадьба</h1>
+        <img src="assets/wedding-4765941_1920.jpg">
+        <div class="wedding-block">
+            <div class="when">
+                <h3>Когда</h3>
+                <p>22 февраля 2022 года</p>
+                <p>Свадебная церемония - 14:00</p>
+                <p>Прием и ужин - 17:00</p>
+            </div>
+            <div class="where">
+                <h3>Где</h3>
+                <p>Центральный дворец бракосочетания</p>
+                <p>Киев, проспект Академіка Глушкова, 1</p>
+                <p>Ресторан "Прага"</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hopeYouCan" id="accept">
+        <h1>Надеемся Вы придете!</h1>
+        <p>Просим Вас ответить нам до 01 февраля 2022</p>
+            <a class="answer" href="#quote_modal" title="">Ответить</a>
+            <!--Quote Popup Window like Modal-->
+            <div id="quote_modal" class="QuoteModal">
+                <div class="popup_modal">
+                    <div>
+                        <a href="#close" title="Close" class="quoteclose">X</a>
+                        <h3 class="text-center">Вы же придете?</h3>
+                        <p class="text-p">Мы очень надеемся, что Вы сможете!</p>
+
+                    </div>
+                    <div class="form-wrapper">
+                        <form role="form" class="text-center" action="send.php" method="POST">
+                            <div class="form-group">
+                                <input type="text" required class="form-control" name="yourName" id="yourName" placeholder="Имя (имена)" tabindex="1">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" required class="form-control" name="email" id="email" placeholder="Email" tabindex="2">
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="3" required class="form-control" name="comments" id="comments" placeholder="Мы придем! или Нас не будет :(" tabindex="3"></textarea>
+                            </div>
+                            <div class="button-1">
+                                <input type="submit" value="Да, будем!" class="btn btn-warning"></input>
+                                <input type="submit" value="Не сможем." class="btn btn-warning2"></input>
+                            </div>
+                        </form>
+                    </div>
+                    <p class="text-p2">С уважением, Адам и Ева.</p>
+                </div>
+            </div>
+
+
+    </section>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div .div1, div .div2, div .div3 {
+    position: sticky;
+    width: 100%;
+    height: 60px;
+    color: black;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 0 0 6px white;
+}
+
+.div1 {
+    background-color: #3f51b5;
+}
+
+.div2 {
+    background-color: #C850C0;
+}
+
+.div3 {
+    background-color: red;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    /*border: 1px solid blue;*/
+}
+
+.card-container {
+    width: 30%;
+    margin: 10px;
+}
+
+.card-bottom {
+    position: absolute;
+    width: 30%;
+    height: 70%;
+    border: 1px solid red;
+    background-color: red;
+    z-index: 0;
+    background: url(assets/1617652978_27-p-devushka-s-puchkom-27.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.card-top, .card-top2, .card-top3, .card-top4, .card-top5, .card-top6, .card-top7, .card-top8, .card-top9 {
+    position: absolute;
+    width: 30%;
+    height: 70%;
+    border: 1px solid grey;
+    background-color: grey;
+    z-index: 1;
+    transition-duration: 0.8s;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.card-top:hover {
+    transition-duration: 1s;
+    transform: translate(200px, 300px);
+    opacity: 0.01;
+}
+
+.card-top2:hover {
+    transition-duration: 1s;
+    opacity: 0.01;
+}
+
+.card-top3:hover {
+    transition-duration: 1s;
+    transform: rotate(180deg);
+    opacity: 0.01;
+}
+.card-top4:hover {
+    transition-duration: 1s;
+    transform: scale(2,3);
+    opacity: 0.01;
+}
+
+.card-top5:hover {
+    transition-duration: 1s;
+    transform: scale(0.1,0.1);
+    opacity: 0.01;
+}
+
+.card-top6:hover {
+    transition-duration: 1s;
+    transform: scaleX(0);
+    opacity: 0.01;
+}
+
+.card-top7:hover {
+    transition-duration: 1s;
+    transform: skewX(90deg);
+    opacity: 0.01;
+}
+
+.card-top8:hover {
+    transition-duration: 1.5s;
+    transform: skew(90deg,180deg);
+    opacity: 0.01;
+}
+
+.card-top9:hover {
+    transition-duration: 1.5s;
+    transform: matrix(1, 0, 0.5, 1, 150, 0);
+    opacity: 0.01;
+}
+
+.animation {
+    height: auto;
+    width: 100%;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.exampleAnimation {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation-name: animator;
+    animation-duration: 4s;
+    box-sizing: border-box;
+}
+
+@keyframes animator {
+    0% {
+        background-color: red;
+        width: 300px;
+    }
+    25% {
+        background-color: blue;
+        width: 400px;
+    }
+    50% {
+        background-color: purple;
+        width: 500px;
+    }
+    75% {
+        background-color: green;
+        width: 600px;
+    }
+    100% {
+        background-color: brown;
+        width: 700px;
+    }
+}
+
+.exampleAnimation2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: purple;
+    position: relative;
+    animation-name: animator2;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes animator2 {
+    0%   {background-color:red; left:0;}
+    12.5%  {background-color:yellow; left:25%;}
+    25%  {background-color:blue; left:50%}
+    37.5%  {background-color:green; left:75%;}
+    50%  {background-color:green; left:calc(100% - 40px);}
+    62.5%   {background-color:green; left:75%;}
+    75%  {background-color:blue; left:50%;}
+    87.5%  {background-color:yellow; left:25%}
+    100%  {background-color:red; left:0;}
+}
+
+
+
+
+

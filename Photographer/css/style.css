@@ -1,0 +1,917 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    text-shadow: 0 2px 4px black;
+    /*font-family: 'Roboto', sans-serif;*/
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-start {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    align-items: center;
+<<<<<<< HEAD
+    background: black url(../assets/mt-1300-home_gallery_10-1.jpg) no-repeat fixed center;
+    background-size: 100% auto;
+=======
+    background: black url(../assets/photographer-1773331_1920.jpg) no-repeat fixed center;
+>>>>>>> f07cf2847ad8cc67b04ab0b56649f88352413ee9
+    padding-top: 20px;
+}
+
+.logo {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /*border: 1px solid slateblue;*/
+}
+
+.logo div {
+    height: 100%;
+}
+
+.logo img {
+    height: 100%;
+    width: auto;
+    transition-duration: 0.7s;
+}
+
+.logo img:hover {
+    height: 100px;
+    width: auto;
+<<<<<<< HEAD
+}
+
+.logo div h2 {
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 6px 8px black;
+=======
+>>>>>>> f07cf2847ad8cc67b04ab0b56649f88352413ee9
+}
+
+.logo div:first-child {
+    margin-right: 40px;
+}
+
+.logo div:nth-child(3) {
+    margin-left: 40px;
+}
+
+
+/* ------------------------------------------- прилипающее меню --------------------------------------------- */
+
+#menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    text-align: center;
+    line-height: 20px;
+    z-index: 100;
+}
+
+#menu ul {
+    padding: 0;
+    margin: 0
+}
+
+#menu li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 10px;
+}
+
+#menu li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    color: white;
+    text-shadow: 0 2px 4px black;
+    /*font-weight: bold;*/
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+#menu li a:hover {
+    text-shadow: 0 2px 4px black;
+    font-weight: bold;
+<<<<<<< HEAD
+    background: linear-gradient(black, grey);
+    /*background-color: #999999;*/
+    border-radius: 4px;
+    /*box-shadow: 2px 2px 2px white;*/
+    transition-duration: 0.5s;
+=======
+    background: linear-gradient(black, #999999);
+    /*background-color: #999999;*/
+    border-radius: 4px;
+    box-shadow: black 0 2px 4px;
+>>>>>>> f07cf2847ad8cc67b04ab0b56649f88352413ee9
+}
+
+.default {
+    width: 100%;
+}
+
+.change {
+    position: fixed;
+    height: 50px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+}
+
+#top {
+    width: 100%;
+    height: 100px;
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+   ------------------------------------------------ World Class Photography -------------------------------------
+*/
+.worldClass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.worldClass h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    color: white;
+    text-shadow: 0 2px 4px black;
+}
+
+.worldClass h2 {
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-shadow: 0 2px 4px black;
+}
+
+.worldClass p {
+    width: 70%;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin: 30px 0 70px 0;
+    padding: 0;
+    line-height: 30px;
+<<<<<<< HEAD
+    color: white;
+    text-shadow: 0 2px 4px black;
+=======
+    text-shadow: 0 1px 4px black;
+>>>>>>> f07cf2847ad8cc67b04ab0b56649f88352413ee9
+}
+
+.worldClass button, .myLatestWorks button, .ourUpdates button {
+    width: 180px;
+    height: 50px;
+    background-color: #D1C8BC;
+    border: #7b7b7b;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+}
+
+.myLatestWorks button, .ourUpdates button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.worldClass button a, .myLatestWorks button a, .ourUpdates button {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.worldClass button:hover, .myLatestWorks button:hover, .ourUpdates button:hover {
+    background-color: #626262;
+}
+
+
+/*
+   ------------------------------------------------ My Latest Work ----------------------------------------------
+*/
+.myLatestWorks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 2rem 2rem;
+}
+
+.myLatestWorks h1, .ourUpdates h1 {
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: none;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-top: 40px;
+}
+
+.ourUpdates h1 {
+    color: white;
+}
+
+    /*
+       ------------------------------------------------ Gallery ----------------------------------------------
+    */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.heading span {
+    display: block;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    /* Compensate for excess margin on outer gallery flex items */
+    margin: -1rem -1rem;
+}
+
+.gallery-item {
+    /* Minimum width of 24rem and grow to fit available space */
+    flex: 1 0 24rem;
+    /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+    margin: 1rem;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    background-color: grey;
+}
+
+.thumbnail {
+    -webkit-backface-visibility: hidden;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 15px 50px rgba(0,0,0,.5);
+}
+
+.gallery-image {
+    transition-duration: 0.5s;
+}
+
+.gallery-image:hover {
+    transform: scale(1.15);
+}
+
+.gallery {
+    display: grid;
+    grid-gap: 5px;
+}
+
+.thumbnail img {
+    display: block;
+    max-width: 100%;
+    transition: opacity .2s ease-in-out;
+}
+.thumbnail:hover img {
+    opacity: .5;
+}
+.thumbnail::after,
+.thumbnail::before {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 50%;
+    transition: transform .8s ease-out;
+    color: #fff;
+}
+.thumbnail::after {
+    content: attr(data-title);
+    top: 0;
+    padding-top: 55px;
+    transform: translateY(-100%) scale(.8);
+    background: rgba(0,0,0,.4);
+    font-size: 3.5rem;
+    font-weight: 300;
+    font-family: Merriweather, serif;
+    text-align: center;
+}
+.thumbnail::before {
+    content: attr(data-description) "…";
+    top: 50%;
+    padding: 20px;
+    transform: translateY(100%) scale(.8);
+    background: white;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    color: black;
+<<<<<<< HEAD
+    font-size: 1.2rem;
+=======
+    font-size: 1.5rem;
+>>>>>>> f07cf2847ad8cc67b04ab0b56649f88352413ee9
+}
+.thumbnail:hover::after,
+.thumbnail:hover::before {
+    transform: translateY(0%) scale(1);
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 900ms ease-out;
+}
+
+.gallery-image:hover {
+    transform: scale(1.15);
+
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling.
+
+*/
+
+@supports (display: grid) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        grid-gap: 2rem;
+    }
+
+    .gallery,
+    .gallery-item {
+        margin: 0;
+    }
+}
+
+/*
+   ------------------------------------------------ Our Updates & Subscribe ----------------------------------------------
+*/
+.ourUpdates {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #343437;
+}
+
+<<<<<<< HEAD
+.ourUpdates input {
+=======
+.ourUpdates form input {
+>>>>>>> f07cf2847ad8cc67b04ab0b56649f88352413ee9
+    width: 300px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    padding-left: 20px;
+}
+
+.ourUpdates form input:focus {
+    border: none;
+    box-shadow: 0 2px 4px grey;
+}
+
+/*
+   ------------------------------------------------ Small Gallery ----------------------------------------------
+*/
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #ecf0f1;
+}
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin: 0 auto;
+    /*padding: 10px;*/
+}
+
+.gallery-items {
+    flex-basis: 16.6%;
+    height: 220px;
+    /*margin-bottom: 6px;*/
+    opacity: .85;
+    cursor: pointer;
+}
+
+.gallery-items:hover {
+    opacity: 1;
+}
+.gallery-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-content {
+    font-size: .8em;
+}
+
+.lightbox {
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    top: 0;
+    left: 0;
+}
+.lightbox-content {
+    position: relative;
+    width: 70%;
+    height: 70%;
+    margin: 5% auto;
+}
+.lightbox-content img {
+    border-radius: 7px;
+    box-shadow: 0 0 3px 0 rgba(225, 225, 225, .25);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 7px;
+    top: 45%;
+    cursor: pointer;
+}
+.lightbox-prev {
+    left: 0;
+}
+.lightbox-next {
+    right: 0;
+}
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    opacity: .8;
+}
+
+@media (max-width: 767px) {
+    .gallery-container {
+        width: 100%;
+    }
+    .gallery-items {
+        flex-basis: 49.80%;
+        margin-bottom: 3px;
+    }
+    .lightbox-content {
+        width: 80%;
+        height: 60%;
+        margin: 15% auto;
+    }
+}
+@media (max-width: 480px) {
+    .gallery-items {
+        flex-basis: 100%;
+        margin-bottom: 1px;
+    }
+    .lightbox-content {
+        width: 90%;
+        margin: 20% auto;
+    }
+}
+/*
+   ------------------------------------------------ Footer ----------------------------------------------
+*/
+
+footer {
+    width: 100%;
+    background-color: #343437;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    box-sizing: border-box;
+<<<<<<< HEAD
+    line-height: 20px;
+=======
+>>>>>>> f07cf2847ad8cc67b04ab0b56649f88352413ee9
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 20px;
+}
+
+.social a.rollover {
+    background: url('../assets/104498_facebook_icon.svg'); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 20px; /* Ширина рисунка */
+    height: 20px; /*  Высота рисунка */
+    margin-right: 15px;
+    transition-duration: 0.5s;
+}
+.social a.rollover:hover {
+    background: url('../assets/white-104498_facebook_icon.svg'); /* Путь к файлу с заменяемым рисунком  */
+}
+
+.social a.rollover2 {
+    background: url('../assets/211920_twitter_social_icon.svg'); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 20px; /* Ширина рисунка */
+    height: 20px; /*  Высота рисунка */
+    margin-right: 15px;
+    transition-duration: 0.5s;
+}
+.social a.rollover2:hover {
+    background: url('../assets/white-104501_twitter_bird_icon.svg'); /* Путь к файлу с заменяемым рисунком  */
+}
+
+.social a.rollover3 {
+    background: url('../assets/1851680_social_pintrest_network_pinterest_social media_icon.svg'); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 20px; /* Ширина рисунка */
+    height: 20px; /*  Высота рисунка */
+    margin-right: 15px;
+    transition-duration: 0.5s;
+}
+.social a.rollover3:hover {
+    background: url('../assets/white-5279116_pin_pinterest_inspiration_pinterest logo_icon.svg'); /* Путь к файлу с заменяемым рисунком  */
+}
+
+.social a.rollover4 {
+    background: url('../assets/1161953_instagram_icon.svg'); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 20px; /* Ширина рисунка */
+    height: 20px; /*  Высота рисунка */
+    transition-duration: 0.5s;
+}
+
+.social a.rollover4:hover {
+    background: url('../assets/white-1161953_instagram_icon.svg'); /* Путь к файлу с заменяемым рисунком  */
+}
+
+.social img {
+    color: #999999;
+    height: 100%;
+    width: auto;
+}
+
+.social img:nth-child(1), .social img:nth-child(2), .social img:nth-child(3) {
+    margin-right: 20px;
+}
+
+.social-p {
+    margin-top: 10px;
+    font-size: 12px;
+<<<<<<< HEAD
+    line-height: 20px;
+=======
+>>>>>>> f07cf2847ad8cc67b04ab0b56649f88352413ee9
+}
+
+
+/* --------------------------------------------- @media -------------------------------------------------- */
+@media screen and (max-width: 780px) {
+
+    .ourUpdates {
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}
+
+
+@media screen and (max-width: 700px) and (min-width: 581px) {
+    #menu li a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 580px) and (min-width: 533px) {
+    #menu li a {
+        font-size: 12px;
+    }
+<<<<<<< HEAD
+
+=======
+>>>>>>> f07cf2847ad8cc67b04ab0b56649f88352413ee9
+}
+
+@media screen and (max-width: 532px) and (min-width: 451px) {
+
+    #menu {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        text-align: center;
+        line-height: 20px;
+        z-index: 100;
+    }
+
+    #menu li {
+        display: inline-block;
+        list-style: none;
+        margin: 5px 0;
+    }
+
+    #menu li a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .wrapper-start {
+        justify-content: normal;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+
+    .logo div {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logo div:first-child {
+        margin-right: 20px;
+    }
+
+    .logo div:nth-child(3) {
+        margin-left: 20px;
+    }
+
+    .logo img {
+        height: 30px;
+        width: auto;
+        transition-duration: 0.6s;
+    }
+
+    .logo img:hover {
+        height: auto;
+        width: 50px;
+    }
+
+    #menu ul .change {
+        /*display: none;*/
+        height: 100px;
+    }
+
+    .worldClass {
+        margin-top: 30px;
+    }
+
+    .worldClass h2 {
+        font-size: 16px;
+    }
+
+    .worldClass h1 {
+        font-size: 34px;
+    }
+
+    .worldClass p {
+        width: 90%;
+        font-size: 12px;
+        text-shadow: 0 1px 4px black;
+    }
+
+    .thumbnail {
+        font-size: 14px;
+    }
+
+    .thumbnail::before {
+        font-size: 1.15rem;
+    }
+
+    .thumbnail::after {
+        font-size: 2.5rem;
+    }
+
+    .ourUpdates {
+        padding: 0 10px;
+    }
+
+    .myLatestWorks h1, .ourUpdates h1 {
+        font-size: 30px;
+    }
+
+    .myLatestWorks {
+        padding: 5px;
+    }
+
+    .ourUpdates p {
+        text-align: center;
+<<<<<<< HEAD
+        color: white;
+        text-shadow: none;
+=======
+>>>>>>> f07cf2847ad8cc67b04ab0b56649f88352413ee9
+    }
+
+    .ourUpdates form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ourUpdates form input {
+        margin-top: 20px;
+    }
+
+    .ourUpdates button {
+        margin-top: 30px;
+         margin-bottom: 0;
+    }
+
+    .gallery {
+        grid-gap: 20px 14px;
+    }
+
+    footer p {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .change {
+        position: fixed;
+        height: 50px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: black;
+    }
+
+    #menu {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        text-align: center;
+        line-height: 20px;
+        z-index: 100;
+        font-size: 10px;
+    }
+
+    #menu li {
+        display: inline-block;
+        list-style: none;
+        margin: 5px 0;
+    }
+
+    #menu li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 10px;
+<<<<<<< HEAD
+        /*color: #fff;*/
+=======
+        color: #fff;
+>>>>>>> f07cf2847ad8cc67b04ab0b56649f88352413ee9
+        text-decoration: none;
+        transition-duration: 0.5s;
+    }
+
+    .gallery-container {
+        display: grid;
+        grid: repeat(3, auto) / auto-flow auto;
+        /*flex-wrap: wrap;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+        width: 100%;
+        margin: 0 auto;
+        !*padding: 10px;*!*/
+    }
+
+    .gallery-items {
+        flex-basis: 16.6%;
+        height: 220px;
+        /*margin-bottom: 6px;*/
+        opacity: .85;
+        cursor: pointer;
+    }
+
+}
+
+
+@media screen and (max-width: 378px) {
+
+    #menu {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        text-align: center;
+        line-height: 20px;
+        z-index: 100;
+    }
+
+    #menu li {
+        display: inline-block;
+        list-style: none;
+        margin: 5px 0;
+    }
+
+    #menu li a {
+<<<<<<< HEAD
+        font-size: 10px;
+=======
+        font-size: 9px;
+>>>>>>> f07cf2847ad8cc67b04ab0b56649f88352413ee9
+    }
+}
+
+@media screen and (max-width: 760px) and (orientation: landscape) {
+    .wrapper-start {
+        height: 700px;
+    }
+<<<<<<< HEAD
+}
+
+@media screen and (max-width: 950px) {
+    .wrapper-start {
+        background-size: auto 100%;
+    }
+
+    .worldClass h1 {
+        font-size: 24px;
+    }
+=======
+>>>>>>> f07cf2847ad8cc67b04ab0b56649f88352413ee9
+}

@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+}
+
+body, html {
+    height: 100vh;
+}
+
+.bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.container {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container a {
+    text-decoration: none;
+    color: white;
+}
+
+.container .header-main {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 10rem;
+    background: repeating-linear-gradient(white, white 2px, transparent 2px, transparent 4px); /* Делаем заголовок в виде горизонтальных полосок */
+    -webkit-background-clip: text; /* Делаем заголовок в виде горизонтальных полосок */
+    -webkit-text-fill-color: transparent; /* Делаем заголовок в виде горизонтальных полосок */
+    animation-name: show; /* плавное появление основного заголовка */
+    animation-duration: 5s; /* плавное появление основного заголовка */
+    animation-iteration-count: 1; /* плавное появление основного заголовка */
+    animation-fill-mode: forwards; /* плавное появление основного заголовка */
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.container .header-second {
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 0 2px 4px black;
+    padding: 0 10%;
+    box-sizing: border-box;
+    animation-name: show-h2; /* плавное появление основного заголовка */
+    animation-duration: 10s; /* плавное появление основного заголовка */
+    animation-iteration-count: 1; /* плавное появление основного заголовка */
+    animation-fill-mode: forwards; /* плавное появление основного заголовка */
+}
+
+@keyframes show-h2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.container svg {
+    width: 64px;
+    height: 64px;
+}
+
+.container svg g {
+    fill: white;
+    transition: all ease 1.5s;
+}
+
+.container svg:hover g {
+    fill: black;
+}
